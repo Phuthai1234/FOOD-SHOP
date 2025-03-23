@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cửa hàng</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<link rel="stylesheet" href="./styles/iconcart.css">
+<script type="text/javascript" src="scripts/java.js">
+</script>
+
+</head>
+
+<body>
+<header class="header">
+	<span class="header-s1">Food Shop</span><br />
+    <span class="header-s2"><hr /></span><br />
+    <span class="header-s3"><b>CỬA HÀNG THỰC PHẨM SẠCH</b></span><br />
+    
+    <form action="/search" method="get" role="search" id="searchform" class="form-search">
+    <div class="ip-bt">
+    <div>
+      <input type="text" placeholder="Từ khóa tìm kiếm..." class="header-input"/>
+      </div>
+      <div class="bt1">
+      <button type="submit" fdprocessedid="k3tz3" id="header-bt">
+      <i class="fa"></i>
+      </button>
+      </div>
+      </div>
+  </form>					
+</header>
+<div>
+  <div id="body">
+    <div id="body-child">
+      <div id="menu">
+        <nav>
+          <ul id="main-menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Giới thiệu.html">GIỚI THIỆU</a></li>
+            <li class="has-child" id="main-menu-cl"><a href="Sản phẩm.html">SẢN PHẨM</a>
+              <ul class="sub-menu">
+                <li><a href="Hoa quả sạch.html">Hoa quả sạch</a></li>
+                <li><a href="Rau sạch.html">Rau sạch</a></li>
+                <li><a href="Thịt sạch.html">Thịt sạch</a></li>
+                <li><a href="Thủy - Hải sản sạch.html">Thủy - Hải sản sạch</a></li>
+              </ul>
+            </li>
+            <li><a href="Tin Tức.html">TIN TỨC</a></li>
+            <li><a href="Tư Vấn.html">TƯ VẤN</a></li>
+            <li><a href="Dịch vụ.html">DỊCH VỤ</a></li>
+            <li><a href="Liên Hệ.html">LIÊN HỆ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cart-icon" onclick="openCart()">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+
+      <div style="margin:20px 0px">
+          <i ><a href="index.html" style="text-decoration:none">Trang chủ </a>//<a href="Sản phẩm.html" style="text-decoration:none"> Sản phẩm </a>//<span style="color:#3C6"> Rau sạch</span></i>
+      </div>
+      <hr  />
+      	<h1 style="font-size:40px;margin-bottom:45px">Rau sạch</h1>
+<div id="body-content-img">
+    	<ul id="body-content-img-main">
+        <li class="has-child1">
+          <img src="./images/suplo.jpg" /><br />
+          <p>Súp lơ xanh</p>
+          <b><i>Giá:</i> 25.000đ</b><br /><br />
+          <a onclick="addToCart('Súp lơ xanh', './images/suplo.jpg', 25000)">
+              <span class="has-child-span">Mua hàng</span>
+          </a>
+      </li>
+      <li class="has-child1">
+          <img src="./images/raucan.jpg" /><br />
+          <p>Rau cần</p>
+          <b><i>Giá:</i> 5.000đ</b><br /><br />
+          <a onclick="addToCart('Rau cần', './images/raucan.jpg', 5000)">
+              <span class="has-child-span">Mua hàng</span>
+          </a>
+      </li>
+      <li class="has-child1">
+          <img src="./images/bapcai.jpg" /><br />
+          <p>Bắp cải</p>
+          <b><i>Giá:</i> 12.000đ</b><br /><br />
+          <a onclick="addToCart('Bắp cải', './images/bapcai.jpg', 12000)">
+              <span class="has-child-span">Mua hàng</span>
+          </a>
+      </li>
+        </ul>
+    </div>
+      <div id="menu2">
+        <nav>
+          <ul id="main-menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Giới thiệu.html">GIỚI THIỆU</a></li>
+            <li><a href="Sản phẩm.html">SẢN PHẨM</a></li>
+            <li><a href="Tin Tức.html">TIN TỨC</a></li>
+            <li><a href="Tư Vấn.html">TƯ VẤN</a></li>
+            <li><a href="Dịch vụ.html">DỊCH VỤ</a></li>
+            <li><a href="Liên Hệ.html">LIÊN HỆ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+<footer>
+	<span>&copy; Bản quyền thuộc về Thai | Cung cấp bởi Thai</span>
+</footer>
+</div>
+<script>
+  if (!localStorage.getItem("currentUser")){
+    location.href = "./login.html";
+  }
+  let logoutBtn = document.getElementById("logout-btn");
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("currentUser");
+    location.href = "./login.html";
+  });
+
+  function addToCart(name, image, price) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let product = { name, image, price, quantity: 1 };
+
+      let existingProduct = cart.find(item => item.name === name);
+      if (existingProduct) {
+          existingProduct.quantity += 1;
+      } else {
+          cart.push(product);
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      updateCartCount(); // Cập nhật số lượng trên icon giỏ hàng
+  }
+
+  function updateCartCount() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+      let cartCountElement = document.getElementById('cart-count');
+
+      if (totalQuantity > 0) {
+          cartCountElement.textContent = totalQuantity;
+          cartCountElement.style.display = 'block';
+      } else {
+          cartCountElement.style.display = 'none';
+      }
+    }
+
+    function openCart() {
+        window.location.href = "giohang.html";
+    }
+
+    window.onload = updateCartCount;
+</script>
+<script type="text/javascript" src="scripts/java.js"></script>
+<script src="./java/infocart.js"></script>
+</body>
+
+</html>     

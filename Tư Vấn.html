@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cửa hàng</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<link rel="stylesheet" href="./styles/iconcart.css">
+<script type="text/javascript" src="scripts/java.js">
+</script>
+
+</head>
+
+<body>
+<header class="header">
+	<span class="header-s1">Food Shop</span><br />
+    <span class="header-s2"><hr /></span><br />
+    <span class="header-s3"><b>CỬA HÀNG THỰC PHẨM SẠCH</b></span><br />
+    
+    <form action="/search" method="get" role="search" id="searchform" class="form-search">
+    <div class="ip-bt">
+    <div>
+      <input type="text" placeholder="Từ khóa tìm kiếm..." class="header-input"/>
+      </div>
+      <div class="bt1">
+      <button type="submit" fdprocessedid="k3tz3" id="header-bt">
+      <i class="fa"></i>
+      </button>
+      </div>
+      </div>
+  </form>					
+</header>
+<div>
+  <div id="body">
+    <div id="body-child">
+      <div id="menu">
+        <nav>
+          <ul id="main-menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Giới thiệu.html">GIỚI THIỆU</a></li>
+            <li class="has-child"><a href="Sản phẩm.html">SẢN PHẨM</a>
+              <ul class="sub-menu">
+                <li><a href="Hoa quả sạch.html">Hoa quả sạch</a></li>
+                <li><a href="Rau sạch.html">Rau sạch</a></li>
+                <li><a href="Thịt sạch.html">Thịt sạch</a></li>
+                <li><a href="Thủy - Hải sản sạch.html">Thủy - Hải sản sạch</a></li>
+              </ul>
+            </li>
+            <li><a href="Tin Tức.html">TIN TỨC</a></li>
+            <li id="main-menu-cl"><a href="Tư Vấn.html">TƯ VẤN</a></li>
+            <li><a href="Dịch vụ.html">DỊCH VỤ</a></li>
+            <li><a href="Liên Hệ.html">LIÊN HỆ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cart-icon" onclick="openCart()">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+
+      <div style="margin:20px 0px">
+          <i ><a href="index.html" style="text-decoration:none">Trang chủ </a>//<span style="color:#3C6"> Tư vấn</span></i>
+      </div>
+      <hr  />
+<div id="tintuc">
+	<div class="tintuc-child">
+    	<div>
+        	<img src="./images/tv3.jpg" />
+        </div>
+        <div class="tintuc-child-content">
+        	<a href="Tư vấn mua hải sản tươi sống.html" class="tt-ch-ct-a1">Tư vấn mua hải sản tươi sống</a>
+            <p><i>Bởi Thai (16/11/2024)</i></p>
+            <p>Nói chung các loại hải sản đều có giá trị dinh dưỡng cao, giàu đạm, các axit  amin, axit béo omega 3, ngoài ra còn có nhiều canxi, photpho, sắt... Trong 100g cua biển cung cấp 103 Kcal, 17,5 g protein, 141 mg canxi, 191 mg photpho, 3,8 mg sắt,...</p>
+            <a href="Tư vấn mua hải sản tươi sống.html" class="tt-ch-ct-a2">Xem chi tiết >></a>
+        </div>	
+    </div>
+    <div class="tintuc-child">
+    	<div>
+        	<img src="./images/tv2.jpg" />
+        </div>
+        <div class="tintuc-child-content">
+        	<a href="Mẹo chọn thịt ngon, bảo đảm chất lượng.html" class="tt-ch-ct-a1">Mẹo chọn thịt ngon, bảo đảm chất lượng</a>
+            <p><i>Bởi Thai (16/11/2024)</i></p>
+            <p>Heo, bò, gà, vịt là các loại thịt phổ biến và dễ chế biến trong bữa cơm gia đình. Tuy nhiên với tình trạng thực phẩm nhiễm khuẩn, kém chất lượng tràn lan thị trường hiện nay làm sao để chọn được loại thịt an toàn? 1. Chọn thịt heo (lợn) Chọn...</p>
+            <a href="Mẹo chọn thịt ngon, bảo đảm chất lượng.html" class="tt-ch-ct-a2">Xem chi tiết >></a>
+        </div>	
+    </div>
+    <div class="tintuc-child">
+    	<div>
+        	<img src="./images/tv.jpg" />
+        </div>
+        <div class="tintuc-child-content">
+        	<a href="Cách chọn hoa quả tươi ngon.html" class="tt-ch-ct-a1">Cách chọn hoa quả tươi ngon</a>
+            <p><i>Bởi Thai (16/11/2024)</i></p>
+            <p>Khi mua hoa quả, bạn không thể bóc bỏ vỏ hoặc cắt, gọt ra, nhìn vào phần bên trong để lựa trái ngon.   Vì vậy, dùng tay và mắt để nhận biết là rất quan trọng. Dưới đây là hướng dẫn giúp bạn chọn một số loại hoa quả ngon. 1. Chanh:...</p>
+            <a href="Cách chọn hoa quả tươi ngon.html" class="tt-ch-ct-a2">Xem chi tiết >></a>
+        </div>	
+    </div>
+</div>
+
+      <div id="menu2">
+        <nav>
+          <ul id="main-menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Giới thiệu.html">GIỚI THIỆU</a></li>
+            <li><a href="Sản phẩm.html">SẢN PHẨM</a></li>
+            <li><a href="Tin Tức.html">TIN TỨC</a></li>
+            <li><a href="Tư Vấn.html">TƯ VẤN</a></li>
+            <li><a href="Dịch vụ.html">DỊCH VỤ</a></li>
+            <li><a href="Liên Hệ.html">LIÊN HỆ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+<footer>
+	<span>&copy; Bản quyền thuộc về Thai | Cung cấp bởi Thai</span>
+</footer>
+</div>
+<script src="./java/infocart.js"></script>
+</body>
+</html>

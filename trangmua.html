@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang mua hàng</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <span class="header-s1">Food Shop</span><br />
+        <span class="header-s2"><hr /></span><br />
+        <span class="header-s3"><b>CỬA HÀNG THỰC PHẨM SẠCH</b></span><br />
+        <form action="/search" role="search">
+            <div class="ip-bt">
+                <div>
+                    <input type="text" placeholder="Từ khóa tìm kiếm..." class="header-input" id="search-keyword" name="keyword" />
+                </div>
+                <div class="bt1">
+                    <button type="submit" id="header-bt">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <nav id="menu">
+        <ul id="main-menu">
+            <li id="main-menu-cl"><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Giới thiệu.html">GIỚI THIỆU</a></li>
+            <li class="has-child">
+                <a href="Sản phẩm.html">SẢN PHẨM</a>
+                <ul class="sub-menu">
+                    <li><a href="Hoa quả sạch.html">Hoa quả sạch</a></li>
+                    <li><a href="Rau sạch.html">Rau sạch</a></li>
+                    <li><a href="Thịt sạch.html">Thịt sạch</a></li>
+                    <li><a href="Thủy - Hải sản sạch.html">Thủy - Hải sản sạch</a></li>
+                </ul>
+            </li>
+            <li><a href="Tin Tức.html">TIN TỨC</a></li>
+            <li><a href="Tư Vấn.html">TƯ VẤN</a></li>
+            <li><a href="Dịch vụ.html">DỊCH VỤ</a></li>
+            <li><a href="Liên Hệ.html">LIÊN HỆ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+    </nav>
+
+    <h1>Chi tiết sản phẩm</h1>
+    <div id="product-details">
+        <img src="./images/vaiheo.jpg" />
+        <h2>Thịt nạc vai lợn TNV10</h2>
+        <p><b>Giá:</b> 120.000đ</p>
+        <p><b>Xuất xứ:</b> Việt Nam</p>
+        <p><b>Thành phần dinh dưỡng:</b> Giàu protein, ít chất béo</p>
+        <p><b>Hướng dẫn bảo quản:</b> Bảo quản trong ngăn mát từ 0 - 4°C</p>
+        <button>Thêm vào giỏ hàng</button>
+    </div>
+
+    <div id="extra-info">
+        <h3>Đánh giá khách hàng</h3>
+        <p>⭐⭐⭐⭐⭐ - "Thịt tươi ngon, rất hài lòng!" - <i>Đức Huy</i></p>
+        <p>⭐⭐⭐⭐ - "Giao hàng nhanh, chất lượng tốt." - <i>Lê Thị Trang Thanh</i></p>
+        
+        <h3>Chính sách giao hàng</h3>
+        <p>🚚 Miễn phí vận chuyển đơn hàng từ 500.000đ.</p>
+        <p>⏳ Giao hàng trong trong vòng 72 giờ đồng hồ(không tính phí ship trong vòng 1 tuần đăng nhập) </p>
+        
+        <h3>Chính sách đổi trả</h3>
+        <p>🔄 Đổi trả trong vòng 7 ngày nếu sản phẩm có vấn đề hoặc giao nhầm hàng.</p>
+        
+    <script src="./java/muahang.js"></script>
+</body>
+</html>
+
+
+
+

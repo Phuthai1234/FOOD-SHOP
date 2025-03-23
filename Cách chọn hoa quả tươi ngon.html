@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cửa hàng</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<link rel="stylesheet" href="./styles/iconcart.css">
+
+</head>
+
+<body>
+<header class="header">
+	<span class="header-s1">Food Shop</span><br />
+    <span class="header-s2"><hr /></span><br />
+    <span class="header-s3"><b>CỬA HÀNG THỰC PHẨM SẠCH</b></span><br />
+    
+    <form action="/search" method="get" role="search" id="searchform" class="form-search">
+    <div class="ip-bt">
+    <div>
+      <input type="text" placeholder="Từ khóa tìm kiếm..." class="header-input"/>
+      </div>
+      <div class="bt1">
+      <button type="submit" fdprocessedid="k3tz3" id="header-bt">
+      <i class="fa"></i>
+      </button>
+      </div>
+      </div>
+  </form>					
+</header>
+<div>
+  <div id="body">
+    <div id="body-child">
+      <div id="menu">
+        <nav>
+          <ul id="main-menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Giới thiệu.html">GIỚI THIỆU</a></li>
+            <li class="has-child"><a href="Sản phẩm.html">SẢN PHẨM</a>
+              <ul class="sub-menu">
+                <li><a href="Hoa quả sạch.html">Hoa quả sạch</a></li>
+                <li><a href="Rau sạch.html">Rau sạch</a></li>
+                <li><a href="Thịt sạch.html">Thịt sạch</a></li>
+                <li><a href="Thủy - Hải sản sạch.html">Thủy - Hải sản sạch</a></li>
+              </ul>
+            </li>
+            <li><a href="Tin Tức.html">TIN TỨC</a></li>
+            <li><a href="Tư Vấn.html">TƯ VẤN</a></li>
+            <li><a href="Dịch vụ.html">DỊCH VỤ</a></li>
+            <li><a href="Liên Hệ.html">LIÊN HỆ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cart-icon" onclick="openCart()">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+
+<div>
+      <div style="margin:20px 0px">
+          <i ><a href="index.html" style="text-decoration:none">Trang chủ </a>//<a href="Tư Vấn.html" style="text-decoration:none"> Tư vấn </a>//<span style="color:#3C6"> Cách chọn hoa quả tươi ngon</span></i>
+      </div>
+      <hr  />
+        <div id="tintuc-child-content-child">
+        <p style="font-size:25px"><b>Cách chọn hoa quả tươi ngon</b></p>
+        <p><i>Bởi Thai (16/11/2024)</i></p>
+        <p>Khi mua hoa quả, bạn không thể bóc bỏ vỏ hoặc cắt, gọt ra, nhìn vào phần bên trong để lựa trái ngon.</p>
+        
+         
+        
+        <p>Vì vậy, dùng tay và mắt để nhận biết là rất quan trọng. Dưới đây là hướng dẫn giúp bạn chọn một số loại hoa quả ngon.</p>
+        
+        <p>1. Chanh: Lựa trái vỏ mỏng, tròn lẳn, da dày, vỏ không vàng, xanh màu lục đậm, gai chanh dàn rộng.</p>
+        
+        <p>2. Cam: Mỏng vỏ, quả tròn đều, không có chỗ nào bị rám, sần.</p>
+        
+        <p>3. Bưởi: Chọn trái nặng tay, vỗ vào không kêu bồm bộp.</p>
+        
+        <p>4. Lê, táo: Trái căng phồng, nặng mới ngon.</p>
+        
+        <p>5. Xoài: Trái to tròn, không thâm đen, có màu vàng sáng, không nhũn.</p>
+        
+        <p>6. Đu đủ: Lựa trái đang chín, màu vàng ngả sang hơi đỏ, nặng trái, cuống còn tươi.</p>
+        
+        <p>7. Mít: Gai dàn xa nhau, bề cao của gai không lớn. Da mít nặng, tròn, dàn hình bầu dục không có ngấn, nặng trái là được.</p>
+        
+        <p>8. Mận: Tươi, không trầy xước, da trơn nhẵn bóng, còn nguyên lá, cuống.</p>
+        
+        <p>9. Dứa: Lựa quả to, búng tay kêu bình bịch. Nếu mắt dứa nhỏ và sâu là dứa gai, không ngon</p>
+        
+        <p>10. Sầu riêng: Trái phải tròn, trái nhỏ và ngắn là trái nhiều múi. Bạn có thể thử bằng cách ấn nhẹ ngón tay vào chỗ tách của trái nếu múi mềm, vàng thơm là trái chín, ngon. Nếu cứng và trắng múi là không ngon.</p>
+        
+        <p>11. Chuối tiêu: Lựa chuối quả đều, tròn, không thâm và có trứng quốc lốm đốm.</p>
+        
+        <p>12. Mãng cầu: Lựa quả gai to, màu trắng ngà, không thâm đen và nứt nẻ.</p>
+        
+        <p>13. Nho: Không nên chọn loại cuống khô, vỏ nhăn, bị rơi rụng nhiều, không còn nguyên chùm. Bạn nên chọn loại chùm lớn, trái to và mọng nước.</p>
+        
+        <p>14. Thanh long: Chọn trái có vỏ bóng đỏ sậm và mỏng.</p>
+        </div>
+</div>
+      <div id="menu2">
+        <nav>
+          <ul id="main-menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="Giới thiệu.html">GIỚI THIỆU</a></li>
+            <li><a href="Sản phẩm.html">SẢN PHẨM</a></li>
+            <li><a href="Tin Tức.html">TIN TỨC</a></li>
+            <li><a href="Tư Vấn.html">TƯ VẤN</a></li>
+            <li><a href="Dịch vụ.html">DỊCH VỤ</a></li>
+            <li><a href="Liên Hệ.html">LIÊN HỆ</a></li>
+            <li><a href="login.html">ĐĂNG NHẬP</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+<footer>
+	<span>&copy; Bản quyền thuộc về Thai | Cung cấp bởi Thai</span>
+</footer>
+</div>
+<script src="./java/infocart.js"></script>
+</body>
+</html>
